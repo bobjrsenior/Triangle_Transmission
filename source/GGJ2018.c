@@ -214,6 +214,20 @@ static void handlePlayer(PADStatus *padStatus, u8 playerNumber){
     players[playerNumber].xPos += stickX * movementMultiplier;
     players[playerNumber].yPos += stickY * movementMultiplier;
     
+    if(players[playerNumber].xPos < -5){
+        players[playerNumber].xPos = -players[playerNumber].xPos;
+    }
+    else if(players[playerNumber].xPos > 5){
+        players[playerNumber].xPos = -players[playerNumber].xPos;
+    }
+    
+    if(players[playerNumber].yPos < -4){
+        players[playerNumber].yPos = -players[playerNumber].yPos;
+    }
+    else if(players[playerNumber].yPos > 4){
+        players[playerNumber].yPos = -players[playerNumber].yPos;
+    }
+    
     // Handle rotation
     f32 angle;
     if(stickY == 0 && stickX == 0){
