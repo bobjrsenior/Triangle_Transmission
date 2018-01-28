@@ -11,3 +11,11 @@ If another player gets small enough they die. Last person standing wins.
 * Control Stick: Move/Aim
 * A: Shoot
 * Start: Quit (If loading from homebrew channel)
+
+## Building
+
+Install devkitPPC from: https://devkitpro.org/wiki/Getting_Started/devkitPPC
+
+If on using the installer on windows, open the embedded mysys (<INSTALL_DIR>\mysys\mysys.bat)
+
+Run make
